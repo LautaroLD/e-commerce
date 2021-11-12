@@ -1,0 +1,68 @@
+header {
+    display              : grid;
+    grid-template-columns: 2fr 1fr;
+    height               : 50px;
+    padding              : 20px 15px;
+    margin-bottom        : 20px;
+    
+    div {
+        display: flex;
+        height : 30px;
+        
+        i {
+            font-size   : 30px;
+            margin-right: 15px;
+        }
+
+        
+    }
+    
+    .header-conteiner-left {
+        position: relative;
+        .bx {
+            
+            
+        }
+        .bx-menu {
+            
+        }
+        .bx-x {
+            position: absolute;
+            left: -5px;
+            z-index: 2;
+            color: $color-Dark-grayish-blue;
+        }
+        
+        img {
+            height: 25px;
+        }
+    }
+
+    .header-conteiner-right {
+        display        : flex;
+        justify-content: end;
+        .cart-container {
+            position: relative;
+            .cart_amount {
+                position: absolute;
+                top: -5px;
+                right: 0;
+                background-color: $primary-color-orange;
+                color: $color-White;
+                font-weight: $font-weight2;
+                height: max-content;
+                padding: 3px 10px;
+                border-radius: 10px;
+            }
+            .cart_amount-disable {
+                display: none;
+            }
+        }
+        .buy-car {}
+
+        .user-icon {
+            height: inherit;
+
+        }
+    }
+}

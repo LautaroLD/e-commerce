@@ -1,0 +1,34 @@
+* {
+    margin    : 0%;
+    padding   : 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size  : 62.5%;
+    font-family: $font-family;
+    min-width  : 375px;
+}
+
+body {
+    position: relative;
+}
+.list-disable {
+    display: none;
+
+}
+.list {
+    position        : absolute;
+    background-color: $color-White;
+    height          : 100em;
+    width           : 70vw;
+    z-index         : 1;
+    padding-top     : 50px;
+
+    li {
+        display    : flex;
+        font-size  : $font-size;
+        font-weight: $font-weight2;
+        margin     : 30px 0 0 20px;
+    }
+}

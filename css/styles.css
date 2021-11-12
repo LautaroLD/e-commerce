@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans";
+  min-width: 375px;
+}
+
+body {
+  position: relative;
+}
+
+.list-disable {
+  display: none;
+}
+
+.list {
+  position: absolute;
+  background-color: white;
+  height: 100em;
+  width: 70vw;
+  z-index: 1;
+  padding-top: 50px;
+}
+.list li {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 30px 0 0 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+header div {
+  display: flex;
+  height: 30px;
+}
+header div i {
+  font-size: 30px;
+  margin-right: 15px;
+}
+header .header-conteiner-left {
+  position: relative;
+}
+header .header-conteiner-left .bx-x {
+  position: absolute;
+  left: -5px;
+  z-index: 2;
+  color: #68707d;
+}
+header .header-conteiner-left img {
+  height: 25px;
+}
+header .header-conteiner-right {
+  display: flex;
+  justify-content: end;
+}
+header .header-conteiner-right .cart-container {
+  position: relative;
+}
+header .header-conteiner-right .cart-container .cart_amount {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background-color: #ff7d1a;
+  color: white;
+  font-weight: 700;
+  height: -webkit-max-content;
+  height: max-content;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+header .header-conteiner-right .cart-container .cart_amount-disable {
+  display: none;
+}
+header .header-conteiner-right .user-icon {
+  height: inherit;
+}
+
+main #picture-article {
+  display: block;
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #picture-article .bx {
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: white;
+  font-size: 3rem;
+}
+main #picture-article .bx:active {
+  color: #ff7d1a;
+}
+main #picture-article .bx-chevron-left {
+  left: 20px;
+}
+main #picture-article .bx-chevron-right {
+  right: 20px;
+}
+main .back-img1 {
+  background-image: url("../images/image-product-1.jpg");
+}
+main .back-img2 {
+  background-image: url("../images/image-product-2.jpg");
+}
+main .back-img3 {
+  background-image: url("../images/image-product-3.jpg");
+}
+main .back-img4 {
+  background-image: url("../images/image-product-4.jpg");
+}
+main div {
+  padding: 0 30px;
+  margin: 20px 0;
+}
+main .text-container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+main .text-container p {
+  font-size: 1.5rem;
+}
+main .text-container .first-text-article {
+  color: #ff7d1a;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main .text-container .title-article {
+  font-size: 3rem;
+}
+main .text-container .desciption-article {
+  line-height: 30px;
+}
+main .price-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+main .price-container p {
+  width: -webkit-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: max-content;
+}
+main .price-container #price-final {
+  font-size: 3rem;
+  font-weight: 700;
+}
+main .price-container #price-discount {
+  color: #ff7d1a;
+  background-color: #fbd6bc;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  margin-left: 15px;
+}
+main .price-container #price-article {
+  font-size: 1.2rem;
+  color: #68707d;
+  text-decoration: line-through;
+  justify-self: center;
+}
+main .amount-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 30px 0;
+}
+main .amount-container .bx {
+  color: #ff7d1a;
+  font-size: 3rem;
+}
+main .amount-container p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+main .amount-container .bx-plus {
+  justify-self: end;
+}
+main .amount-container .bx-minus {
+  justify-self: start;
+}
+main button {
+  background-color: #ff7d1a;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 10px 15px 3px #fbd6bc;
+}
+main button i {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #b6bcc8;
+}
+footer .attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+  font-weight: 700;
+}
+footer .attribution a {
+  color: #3e52a3;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <ul id="listId" class="list-disable">
+    <li>Collections</li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+  <header>
+    <div class="header-conteiner-left">
+      <i id="btn-menu" class='bx bx-menu'></i>
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="header-conteiner-right">
+      <div class="cart-container">
+        <i class='bx bx-cart-alt'></i>
+        <p id="cart_amount" class="cart_amount-disable" ></p>
+      </div>
+      <img src="./images/image-avatar.png" class="user-icon"></img>
+    </div>
+  </header>
+
+  <main>
+    <picture id="picture-article" class="back-img1">
+      <i id="arrow-left" class='bx bx-chevron-left'></i>
+      <i id="arrow-right" class='bx bx-chevron-right'></i>
+    </picture>
+    <div class="text-container">
+      <p class="first-text-article">
+        Sneaker Company
+      </p>
+      <h2 class="title-article">
+        Fall Limited Edition Sneakers
+      </h2>
+
+      <p class="desciption-article">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+    </div>
+    <div class="price-container">
+      <p id="price-final">$125.00</p>
+      <p id="price-discount">50%</p>
+      <p id="price-article">$250.00</p>
+    </div>
+    <div class="amount-container">
+      <i id="minus-amount" class='bx bx-minus'></i>
+      <p id="amount">0</p>
+      <i id="plus-amount" class='bx bx-plus'></i>
+    </div>
+    <div class="btn-container">
+      <button onclick="add_to_cart()"> <i class='bx bx-cart-alt'></i> Add to cart</button>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <script src="./code.js"></script>
+</body>
+
+</html>
