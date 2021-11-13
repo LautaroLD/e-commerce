@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -16,11 +15,17 @@
 
 <body>
   <ul id="listId" class="list-disable">
-    <li>Collections</li>
-    <li>Men</li>
-    <li>Women</li>
-    <li>About</li>
-    <li>Contact</li>
+    <li><i class='bx bx-collection'></i>Collections</li>
+    <li><i class='bx bx-male-sign'></i>Men</li>
+    <li><i class='bx bx-female-sign'></i>Women</li>
+    <li><i class='bx bx-question-mark'></i>About</li>
+    <li><i class='bx bx-message-rounded' ></i>Contact</li>
+    <hr>
+    <li><i class='bx bx-user-circle'></i>profile</li>
+    <li><i class='bx bx-heart'></i>favorites</li>
+    <li><i class='bx bx-history'></i>history</li>
+    <li><i class='bx bx-cog'></i>settings</li>
+    <li><i class='bx bxs-log-out'></i>sing out</li>
   </ul>
   <header>
     <div class="header-conteiner-left">
@@ -28,9 +33,9 @@
       <img src="./images/logo.svg" alt="">
     </div>
     <div class="header-conteiner-right">
-      <div class="cart-container">
+      <div id="cart-container" class="cart-container">
         <i class='bx bx-cart-alt'></i>
-        <p id="cart_amount" class="cart_amount-disable" ></p>
+        <p id="cart_amount" class="cart_amount-disable"></p>
       </div>
       <img src="./images/image-avatar.png" class="user-icon"></img>
     </div>
@@ -40,6 +45,20 @@
     <picture id="picture-article" class="back-img1">
       <i id="arrow-left" class='bx bx-chevron-left'></i>
       <i id="arrow-right" class='bx bx-chevron-right'></i>
+      <div id="cart-items-container" class="cart-items-container-disable">
+        <p class="cart-items-title-container">Cart</p>
+        <hr>
+        <p id="cart-empty-msj" class="cart-empty-msj-disable">Your cart is empty.</p>
+        <div id="second-section-cart" class="second-section-cart-disable" >
+          <span></span>
+          <div>
+            <p class="cart-items-title">Fall Limited Edition Sneakers</p>
+            <p id="cart-items-price" class="cart-items-price"></p>
+          </div>
+          <i id="bx-trash" class='bx bxs-trash'></i>
+          <button>Checkout</button>
+        </div>
+      </div>
     </picture>
     <div class="text-container">
       <p class="first-text-article">

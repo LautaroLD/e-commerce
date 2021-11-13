@@ -13,22 +13,37 @@ html {
 body {
     position: relative;
 }
+
 .list-disable {
     display: none;
 
 }
+
 .list {
     position        : absolute;
     background-color: $color-White;
-    height          : 100em;
+    height          : 100%;
     width           : 70vw;
-    z-index         : 1;
+    z-index         : 2;
     padding-top     : 50px;
 
     li {
-        display    : flex;
-        font-size  : $font-size;
-        font-weight: $font-weight2;
-        margin     : 30px 0 0 20px;
+        display         : flex;
+        align-items     : center;
+        font-size       : $font-size;
+        font-weight     : $font-weight2;
+        margin          : 30px 0 0 0px;
+        padding         : 5px 0 10px 20px;
+        background-color: $color-Light-grayish-blue;
+
+        .bx {
+            font-size   : $font-size-bx;
+            margin-right: 5px;
+        }
     }
+
+    hr {
+        margin-block: 20px;
+    }
+
 }

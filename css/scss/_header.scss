@@ -11,7 +11,7 @@ header {
         
         i {
             font-size   : 30px;
-            margin-right: 15px;
+            margin-right: 20px;
         }
 
         
@@ -30,6 +30,7 @@ header {
             position: absolute;
             left: -5px;
             z-index: 2;
+            filter: none;
             color: $color-Dark-grayish-blue;
         }
         
