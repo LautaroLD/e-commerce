@@ -14,77 +14,111 @@
 </head>
 
 <body>
-  <ul id="listId" class="list-disable">
-    <li><i class='bx bx-collection'></i>Collections</li>
-    <li><i class='bx bx-male-sign'></i>Men</li>
-    <li><i class='bx bx-female-sign'></i>Women</li>
-    <li><i class='bx bx-question-mark'></i>About</li>
-    <li><i class='bx bx-message-rounded' ></i>Contact</li>
-    <hr>
-    <li><i class='bx bx-user-circle'></i>profile</li>
-    <li><i class='bx bx-heart'></i>favorites</li>
-    <li><i class='bx bx-history'></i>history</li>
-    <li><i class='bx bx-cog'></i>settings</li>
-    <li><i class='bx bxs-log-out'></i>sing out</li>
-  </ul>
+  <div id="msj-container-alert" class="msj-container-alert">
+    <i class='bx bx-check-circle'></i>
+    <p>successful purchase!!</p>
+    <button onclick="close_alert()" >Continue</button>
+  </div>
   <header>
     <div class="header-conteiner-left">
       <i id="btn-menu" class='bx bx-menu'></i>
       <img src="./images/logo.svg" alt="">
+
+      <ul id="listId" class="list-disable">
+        <li><i class='bx bx-collection'></i>Collections</li>
+        <li><i class='bx bx-male-sign'></i>Men</li>
+        <li><i class='bx bx-female-sign'></i>Women</li>
+        <li><i class='bx bx-question-mark'></i>About</li>
+        <li><i class='bx bx-message-rounded'></i>Contact</li>
+        <hr>
+        <li class="user-menu-items"><i class='bx bx-user-circle'></i>profile</li>
+        <li><i class='bx bx-heart'></i>favorites</li>
+        <li><i class='bx bx-history'></i>history</li>
+        <li class="user-menu-items"><i class='bx bx-cog'></i>settings</li>
+        <li class="user-menu-items"><i class='bx bxs-log-out'></i>sing out</li>
+      </ul>
     </div>
     <div class="header-conteiner-right">
       <div id="cart-container" class="cart-container">
         <i class='bx bx-cart-alt'></i>
         <p id="cart_amount" class="cart_amount-disable"></p>
       </div>
-      <img src="./images/image-avatar.png" class="user-icon"></img>
-    </div>
-  </header>
-
-  <main>
-    <picture id="picture-article" class="back-img1">
-      <i id="arrow-left" class='bx bx-chevron-left'></i>
-      <i id="arrow-right" class='bx bx-chevron-right'></i>
       <div id="cart-items-container" class="cart-items-container-disable">
         <p class="cart-items-title-container">Cart</p>
         <hr>
         <p id="cart-empty-msj" class="cart-empty-msj-disable">Your cart is empty.</p>
-        <div id="second-section-cart" class="second-section-cart-disable" >
+        <div id="second-section-cart" class="second-section-cart-disable">
           <span></span>
           <div>
             <p class="cart-items-title">Fall Limited Edition Sneakers</p>
             <p id="cart-items-price" class="cart-items-price"></p>
           </div>
           <i id="bx-trash" class='bx bxs-trash'></i>
-          <button>Checkout</button>
+          <button onclick="open_alert()" >Checkout</button>
         </div>
       </div>
-    </picture>
-    <div class="text-container">
-      <p class="first-text-article">
-        Sneaker Company
-      </p>
-      <h2 class="title-article">
-        Fall Limited Edition Sneakers
-      </h2>
+      <img src="./images/image-avatar.png" id="user-icon" class="user-icon"></img>
+      <div id="user-section-container" class="user-section-disable">
+        <div class="user-section--first">
+          <img src="./images/image-avatar.png" class="user-section--icon"></img>
+          <div>
+            <p>Pepito Perez</p>
+            <p>Argentina</p>
+          </div>
+        </div>
+        <div class="user-section-second">
+          <ul>
+            <li class="user-menu-items"><i class='bx bx-user-circle'></i>profile</li>
 
-      <p class="desciption-article">
-        These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
-      </p>
+            <li class="user-menu-items"><i class='bx bx-cog'></i>settings</li>
+
+            <li class="user-menu-items"><i class='bx bxs-log-out'></i>sing out</li>
+
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="price-container">
-      <p id="price-final">$125.00</p>
-      <p id="price-discount">50%</p>
-      <p id="price-article">$250.00</p>
+  </header>
+  <main>
+    <picture id="picture-article" class="back-img1">
+      <i id="arrow-left" class='bx bx-chevron-left'></i>
+      <i id="arrow-right" class='bx bx-chevron-right'></i>
+    </picture>
+    <div id="img-container-desktop" class="img-container-desktop">
+      <picture id="img1" class="imgs back-img1"></picture>
+      <picture id="img2" class="imgs back-img2"></picture>
+      <picture id="img3" class="imgs back-img3"></picture>
+      <picture id="img4" class="imgs back-img4"></picture>
     </div>
-    <div class="amount-container">
-      <i id="minus-amount" class='bx bx-minus'></i>
-      <p id="amount">0</p>
-      <i id="plus-amount" class='bx bx-plus'></i>
-    </div>
-    <div class="btn-container">
-      <button onclick="add_to_cart()"> <i class='bx bx-cart-alt'></i> Add to cart</button>
+    <div class="dates-content">
+      <div class="text-container">
+        <p class="first-text-article">
+          Sneaker Company
+        </p>
+        <h2 class="title-article">
+          Fall Limited Edition Sneakers
+        </h2>
+
+        <p class="desciption-article">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+      </div>
+      <div class="price-container">
+        <p id="price-final">$125.00</p>
+        <p id="price-discount">50%</p>
+        <p id="price-article">$250.00</p>
+      </div>
+      <div class="amount-btn-divs-container">
+        <div class="amount-container">
+          <i id="minus-amount" class='bx bx-minus'></i>
+          <p id="amount">0</p>
+          <i id="plus-amount" class='bx bx-plus'></i>
+        </div>
+        <div class="btn-container">
+          <button onclick="add_to_cart()"> <i class='bx bx-cart-alt'></i> Add to cart</button>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
