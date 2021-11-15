@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    font-size: 62.5%;
+}
+body {
+    background-color: $color-Light-grayish-blue;
+    font-family: $font-page;
+    min-width: 320px;
+}

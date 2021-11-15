@@ -1,0 +1,121 @@
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: $register-min-height;
+
+    &__container{
+        background-color: $register-container-background;
+        border: 2px solid $color-Black;
+        border-radius: 40px;
+        color: $color-Black;
+        padding: 60px 68px 40px;
+        min-height: 700px;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & h2 {
+            text-align: center;
+            font-size:2.5rem
+        }
+
+        &--form{
+            display: flex;
+            flex-direction: column;
+            
+            & label{
+                display: flex;
+                font-size: 1.4rem;
+                align-items: center;
+
+                & input {
+                    margin-right: 5px;
+                }
+            }
+
+        }
+
+        &--details{
+            color: $color-Black;
+            display: flex;
+            justify-content: space-between;
+            margin-top:10px ;
+
+            & a{
+                color: $color-Black;
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &--socialMedia > div{
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+
+            & > img{
+                width: 30px;
+                margin-right: 10px;
+            }
+        }
+
+        &--linkLogin{
+            font-size: 1.3rem;
+            display: flex;
+            align-items: baseline;
+            place-content: center;
+
+            & a{
+                color: $color-Black;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-decoration: none;
+                margin-left: 5px;
+                letter-spacing: 1px;
+                font-style: oblique;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    } 
+}
+
+.input{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px solid $color-Black;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder{
+    color: $color-Black;
+}
+
+button{
+    background-color: $primary-color-orange ;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: $color-Black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}

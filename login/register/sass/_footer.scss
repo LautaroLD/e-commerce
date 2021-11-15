@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+
+    & a{
+        color: $color-Black;
+        font-size: 1.4rem;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+body {
+    @include respond-to(650px) {
+        .header {
+            display        : flex;
+            justify-content: center;
+            box-sizing     : border-box;
+            height         : max-content;
+            padding        : 8px 8px 20px 8px;
+            margin-bottom: 0;
+
+            & a {
+                display        : flex;
+                align-items    : center;
+                text-decoration: none;
+                font-size      : 3.2rem;
+                font-style     : oblique;
+                font-weight    : bold;
+                color          : $color-Black;
+                height         : max-content;
+            }
+
+            &__img {
+                width : 200px;
+                height: 50px;
+            }
+        }
+
+        .login__container, .register__container {
+            background-color: $color-Light-grayish-blue;
+            border          : none;
+            padding         : 0;
+            width           : 100%;
+        }
+
+        .footer {
+            background-color: $primary-color-orange;
+        }
+    }
+}
