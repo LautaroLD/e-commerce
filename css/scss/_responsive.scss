@@ -2,6 +2,10 @@ html {
     @include respond-to(1024px) {
         body {
             padding-inline: 30px;
+            .msj-container-alert {
+                width: 50vw;
+                left: 25vw;
+            }
             footer {
                 margin-inline: -30px;
             }

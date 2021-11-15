@@ -57,6 +57,14 @@ header {
                 padding         : 5px 0 10px 20px;
                 background-color: $color-Light-grayish-blue;
 
+                a {
+                    display        : flex;
+                    text-decoration: none;
+                    color          : $color-Black;
+                    width          : 100%;
+                    align-items    : center;
+                }
+
                 .bx {
                     font-size   : $font-size-bx;
                     margin-right: 5px;
@@ -100,19 +108,19 @@ header {
         }
 
         .cart-items-container {
-            position        : absolute;
-            display         : flex;
-            flex-direction  : column;
-            left            : -60vw;
-            bottom          : -345px;
-            background-color: $color-White;
-            height          : 300px;
-            width           : 90vw;
-            border-radius   : 10px;
-            padding         : 15px 0px 30px;
-            box-shadow      : 0px 7px 20px 0px gray;
+            position           : absolute;
+            display            : flex;
+            flex-direction     : column;
+            left               : -60vw;
+            bottom             : -345px;
+            background-color   : $color-White;
+            height             : 300px;
+            width              : 90vw;
+            border-radius      : 10px;
+            padding            : 15px 0px 30px;
+            box-shadow         : 0px 7px 20px 0px gray;
             // margin-top      : 25px;
-            z-index         : 5;
+            z-index            : 5;
 
             .cart-items-title-container {
                 font-size  : $font-size + 1;
@@ -243,6 +251,14 @@ header {
                         margin-block    : 10px;
                         background-color: $color-Light-grayish-blue;
                         width           : 100%;
+
+                        a {
+                            display        : flex;
+                            text-decoration: none;
+                            color          : $color-Black;
+                            width          : 100%;
+                            align-items    : center;
+                        }
 
                         .bx {
                             margin-right: 10px;

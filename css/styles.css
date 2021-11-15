@@ -93,6 +93,13 @@ header .header-conteiner-left .list li {
   padding: 5px 0 10px 20px;
   background-color: #f7f8fd;
 }
+header .header-conteiner-left .list li a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  align-items: center;
+}
 header .header-conteiner-left .list li .bx {
   font-size: 3rem;
   margin-right: 5px;
@@ -247,6 +254,13 @@ header .header-conteiner-right .user-section .user-section-second ul .user-menu-
   margin-block: 10px;
   background-color: #f7f8fd;
   width: 100%;
+}
+header .header-conteiner-right .user-section .user-section-second ul .user-menu-items a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  align-items: center;
 }
 header .header-conteiner-right .user-section .user-section-second ul .user-menu-items .bx {
   margin-right: 10px;
@@ -408,6 +422,10 @@ footer .attribution a {
 @media only screen and (min-width: 1024px) {
   html body {
     padding-inline: 30px;
+  }
+  html body .msj-container-alert {
+    width: 50vw;
+    left: 25vw;
   }
   html body footer {
     margin-inline: -30px;
