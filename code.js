@@ -143,7 +143,7 @@ function reset_amount_cart() {
 }
 
 function total_buy() {
-    cart_items_price.innerHTML = `: $125.00 x ${amount.innerText} = <b> $${125.00 * amount.innerText}</b>`
+    cart_items_price.innerHTML = `$125.00 x ${amount.innerText} = <b> $${125.00 * amount.innerText}</b>`
 }
 
 function close_alert() {

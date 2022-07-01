@@ -22,7 +22,7 @@
   <header>
     <div class="header-conteiner-left">
       <i id="btn-menu" class='bx bx-menu'></i>
-      <img src="./images/logo.svg" alt="">
+      <img class="logo" src="./images/logo.svg" alt="">
 
       <ul id="listId" class="list-disable">
         <li><i class='bx bx-collection'></i>Collections</li>
@@ -48,12 +48,14 @@
         <hr>
         <p id="cart-empty-msj" class="cart-empty-msj-disable">Your cart is empty.</p>
         <div id="second-section-cart" class="second-section-cart-disable">
-          <span></span>
-          <div>
-            <p class="cart-items-title">Fall Limited Edition Sneakers</p>
-            <p id="cart-items-price" class="cart-items-price"></p>
+          <div class="item">
+            <span></span>
+            <div>
+              <p class="cart-items-title">Fall Limited Edition Sneakers</p>
+              <p id="cart-items-price" class="cart-items-price"></p>
+            </div>
+            <i id="bx-trash" class='bx bxs-trash'></i>
           </div>
-          <i id="bx-trash" class='bx bxs-trash'></i>
           <button onclick="open_alert()">Checkout</button>
         </div>
       </div>
@@ -72,7 +74,7 @@
 
             <li class="user-menu-items"><i class='bx bx-cog'></i>settings</li>
 
-            <li class="user-menu-items"><a href="./login/index.html"> <i class='bx bxs-log-out'></i>sing out</a></li>
+            <li class="user-menu-items"><i class='bx bxs-log-out'></i>sing out</li>
 
           </ul>
         </div>
@@ -85,10 +87,10 @@
       <i id="arrow-right" class='bx bx-chevron-right'></i>
     </picture>
     <div id="img-container-desktop" class="img-container-desktop">
-      <picture id="img1" class="imgs back-img1"></picture>
-      <picture id="img2" class="imgs back-img2"></picture>
-      <picture id="img3" class="imgs back-img3"></picture>
-      <picture id="img4" class="imgs back-img4"></picture>
+      <picture id="img1" class="imgs back-img1-mini"></picture>
+      <picture id="img2" class="imgs back-img2-mini"></picture>
+      <picture id="img3" class="imgs back-img3-mini"></picture>
+      <picture id="img4" class="imgs back-img4-mini"></picture>
     </div>
     <div class="dates-content">
       <div class="text-container">
